@@ -9,6 +9,7 @@
 * The energy of pixel $`\sqrt{\Delta_{x}^2(y,x)+\Delta_{y}^2(y,x)}`$.
   * $`\Delta_{x}^2(y,x)=R_x(y,x)^2+G_x(y,x)^2+B_x(y,x)^2`$.
   * $`\Delta_{y}^2(y,x)=R_y(y,x)^2+G_y(y,x)^2+B_y(y,x)^2`$.
+* The corresponding function is `void calc_energy(struct rgb_img *im, struct rgb_img **grad);`.
 ## 2. Cost Array
 * Define the function which allocates and computes the dunamic array.
 
