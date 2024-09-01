@@ -3,6 +3,7 @@
 * A vertical seam in an image is a path of pixels connected from the top to the bottom with one pixel in each row; a horizontal seam is a path of pixels connected from the left to the right with one pixel in each column.
 * Unlike standard content-agnostic resizing techniques (such as cropping and scaling), seam carving preserves the most interest features (aspect ratio, set of objects present, etc.) of the image.
 * It is now a core feature in Adobe Photoshop and other computer graphics applications.
+
 ![image](seamcarving.png)
 ---
 ## 1. Dual-Gradient Energy Function
