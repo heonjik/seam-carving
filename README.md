@@ -11,10 +11,14 @@
   * $`\Delta_{y}^2(y,x)=R_y(y,x)^2+G_y(y,x)^2+B_y(y,x)^2`$.
 * The corresponding function is `void calc_energy(struct rgb_img *im, struct rgb_img **grad);`.
 ## 2. Cost Array
-* Define the function which allocates and computes the dunamic array.
+* Define the function which allocates and computes the dunamic array `*best_arr`.
+* `(*best_arr)[i*width+j]` contains the minimum cost of a seam from the top of grad to the point (i,j).
+* The corresponding function is `dynamic_seam(struct rgb_img *grad, double **best_arr);`.
 
 ## 3. Recover the seam
 * Write a function that allocates a path through the minimum seam as defined by the array best.
+* The corresponding function is `void recover_path(double *best, int height, int width, int **path);`.
 
 ## 4. Write a function that removes the seam
 * Write the function that creates the destination image, and writes to it the source image, with the seam removed.
+* The corresponding function is `void remove_seam(struct rgb_img *src, struct rgb_img **dest, int *path);`.
