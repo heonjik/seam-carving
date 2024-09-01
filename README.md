@@ -6,7 +6,7 @@
 ---
 ## 1. Dual-Gradient Energy Function
 * The first step is to calculate the energy of a pixel, which is a measure of its perceptual importance – the higher the energy, the less likely that the pixel will be included as part of a seam.
-* The energy of pixel $/`\sqrt{\Delta_{x}^2(y,x)+\Delta_{y}^2(y,x)}`$.
+* The energy of pixel $`\sqrt{\Delta_{x}^2(y,x)+\Delta_{y}^2(y,x)}`$.
   * $`\Delta_{x}^2(y,x)=R_x(y,x)^2+G_x(y,x)^2+B_x(y,x)^2`$.
   * $`\Delta_{y}^2(y,x)=R_y(y,x)^2+G_y(y,x)^2+B_y(y,x)^2`$.
 ## 2. Cost Array
